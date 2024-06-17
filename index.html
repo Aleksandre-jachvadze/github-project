@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./responsive/responsive.css">
+    <script src="./app.js" defer></script>
+    <title>GitHub users</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="head">
+        <h2>devfinder</h2>
+        <div class="head-btn-part">
+          <span id="dark-to-light-txt">Dark</span>
+          <button class="dark-light-button"></button>
+        </div>
+      </header>
+      <section class="search-form">
+        <input
+          type="text"
+          placeholder="Search GitHub username…"
+          id="searchInput"
+        />
+        <button id="search-btn">Search</button>
+      </section>
+      <section class="searched-info-card">
+        <div class="profile-pic-and-date">
+          <img src="./photos/pussycat.png" alt="profile-pic" id="profilePic" />
+          <div class="name-link-date">
+            <h3 id="name">The Octocat</h3>
+            <a href="#" class="name-link">@octocat</a>
+            <p class="date">Joined 25 Jan 2011</p>
+          </div>
+        </div>
+        <p class="about-information">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+          odio. Quisque volutpat mattis eros.
+        </p>
+        <div class="media-minicard">
+            <div>
+                <span>Repos</span>
+                <h4 id="repos">8</h4>
+            </div>
+            <div>
+                <span>Followers</span>
+                <h4 id="followers">3938</h4>
+            </div>
+            <div>
+                <span>Following</span>
+                <h4 id="following">9</h4>
+            </div>
+        </div>
+        <footer class="about-me">
+            <div id="location">
+                <img src="./photos/location-day.svg" alt="location-icn">
+                <a href="#" id="loc">San Francisco</a>
+            </div>
+            <div>
+                <img src="./photos/link-day.svg" alt="link-icn">
+                <a href="https://github.blog" id="lin">https://github.blog</a>
+            </div>
+            <div>
+                <img src="./photos/twitter-day.svg" alt="twitter-icn">
+                <a href="#" id="twitter">Not Avalible</a>
+            </div>
+            <div>
+                <img src="./photos/workplace-day.svg" alt="company-icn">
+                <a href="#" id="company">@github</a>
+            </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
